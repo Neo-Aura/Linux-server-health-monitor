@@ -58,7 +58,17 @@ tail -n 30 logs/health-monitor.log
 
 ## Example Checks
 
-The script reports CPU load, memory usage, and root disk usage, with an `OK` status or a warning when a configured threshold is reached.
+The screenshot below shows the Linux Server Health Monitor running on Ubuntu Linux on an AWS EC2 instance.
+
+Example Checks
+
+CPU load: Compares the one-minute load average against a configurable threshold based on available CPU cores.
+
+Memory usage: Reports usage and warns when it reaches the configured threshold.
+
+Root disk usage: Reports filesystem usage and warns when it reaches the configured threshold.
+
+The thresholds are configurable examples for learning and should be tuned to the server and workload before production use.
 
 ## What I Learned
 
